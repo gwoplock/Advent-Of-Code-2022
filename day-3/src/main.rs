@@ -31,7 +31,7 @@ fn solve_problem(data: String) {
 
             let common = find_common(&pocket1, &pocket2);
 
-            dbg!(&common);
+            // dbg!(&common);
 
             let priority;
             if common[0] <= b'Z' {
@@ -42,7 +42,7 @@ fn solve_problem(data: String) {
                 panic!("wat")
             }
 
-            println!("letter {}, priority {}", common[0], priority);
+            // println!("letter {}, priority {}", common[0], priority);
 
             priority
         })
@@ -50,7 +50,7 @@ fn solve_problem(data: String) {
 
     let mut i = 0;
     let all_sacks = data.trim().split("\n").collect::<Vec<&str>>();
-    dbg!(&all_sacks);
+    // dbg!(&all_sacks);
     let mut badge_pri: Vec<i64> = Vec::new();
     while i < all_sacks.len() {
         let common1 = find_common(
