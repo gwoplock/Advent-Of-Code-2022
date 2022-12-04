@@ -1,10 +1,8 @@
+use std::env;
 use std::fs::File;
 use std::io::{self, Read};
 use std::path::Path;
-use std::thread;
-use std::time::Duration;
 use std::time::Instant;
-use std::{env, vec};
 
 fn main() {
     let args: Vec<String> = env::args().collect();
